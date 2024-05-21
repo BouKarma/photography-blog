@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Blog - Ryan Silva</title>
+    <script src="https://kit.fontawesome.com/f6826c6d44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <img src="images/logo-no-background.png" alt="logo-png">
+            </div>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <!-- <li id="posts"><a href="#">Posts</a></li> -->
+                <li id="contact"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <div class="image-carousel">
+                <img src="images/IMG_2763.jpg">
+                <img src="images/IMG_3686.jpg">
+                <img src="images/IMG_3714.jpg">
+                <img src="images/IMG_3831.jpg">
+                <img src="images/IMG_3854.jpg">
+            </div>
+            <div class="header-title">
+                <span>I'm Ryan.<br>Here I post some of my pictures,<br>
+                and the story behind them.</span>
+                <div class="about-btn">
+                    <button type="submit" class="btn" onclick="openPopup()">About Me</button>
+                </div>
+            </div>
+        </header>
+        <div class="popup" id="popup">
+            <h2>Nice to meet you!</h2>
+            <img src="profile-picture.jpg" alt="profile-picture">
+            <p>Hi, I'm Ryan, a student specializing in Web Development and Cybersecurity with a focus on Front-end development.</p>
+            <br>
+            <p>Photography is a hobby for me, and my main area of study is programming. I created this blog to test my programming knowledge and to share some of my pictures.</p>
+            <br>
+            <p class="contact">Contact:</p>
+            <span class="info-text">Email: <a href="mailto:ryanv0910@gmail.com">ryanv0910@gmail.com</a></span>
+            <div class="media-icons">
+                <a href="https://github.com/BouKarma" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ryan-silva-942b84208/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/RyanVic__" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ryanv_09/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button type="button" onclick="closePopup()"><i class="fa fa-times" aria-hidden="true"></i> Close</button>
+        </div>
+        <div class="wrapper">
+            <div class="post">
+                <img src="posts/posts-14-05-2024/post01/IMG_0159.jpg" alt="post-img">
+                <div class="post-data">
+                    <p class="post-date">14/05/2024</p>
+                    <h4>A special picture at the sunset</h4>
+                    <h6>This is one of my first pictures, taken a few days after I got my camera...</h6>
+                    <p class="post-category">Street Photography</p>
+                    <a href="posts/posts-14-05-2024/post01/index.html"><button class="read-more-btn">Read more</button></a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="posts/posts-14-05-2024/post02/IMG_1244.jpg" alt="post-img">
+                <div class="post-data">
+                    <p class="post-date">14/05/2024</p>
+                    <h4>A boat in the river of Aveiro</h4>
+                    <h6>A picture taken on a trip, a few days before christmas...</h6>
+                    <p class="post-category">Street Photography</p>
+                    <a href="posts/posts-14-05-2024/post02/index.html"><button class="read-more-btn">Read more</button></a>
+                </div>
+            </div>
+            <!-- <div class="post">
+                <img src="posts/posts-14-05-2024/post02/IMG_1244.jpg" alt="post-img">
+                <div class="post-data">
+                    <p class="post-date">dd/mm/yyyy</p>
+                    <h4>Post Title</h4>
+                    <h6>Post description</h6>
+                    <p class="post-category">Post category</p>
+                    <a href="posts/posts-14-05-2024/post01/index.html"><button class="read-more-btn">Read more</button></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <span>© 2024 Copyright: RyanSilva.com</span>
+        </div>
+    </footer>
+</body>
+</html>

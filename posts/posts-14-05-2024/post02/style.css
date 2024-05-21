@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6e1;
+}
+/* Nav Bar */
+.menu{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2ab;
+    width: 100%;
+    z-index: 12;
+    padding: 35px;
+    transition: all 0.2s;
+}
+.menu.sticky{
+    background: #f2f2f2;
+    position: fixed;
+    padding: 10px;
+}
+.menu.sticky ul li:hover{
+    background: #afafaf;
+}
+.menu .logo img{
+    height: 50px;
+    margin: 20px 0 0 40px ;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 0;
+}
+.menu ul li{
+    margin: 0 15px;
+    list-style: none;
+    border-radius: 3px;
+    padding: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    background: #fff;
+}
+.menu ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+}
+@media(max-width: 950px){
+    .menu{
+        padding: 15px;
+    }
+    .menu ul{
+        margin: 0;
+    }
+    .menu ul li{
+        margin: 0 5px;
+    }
+}
+@media(max-width: 680px){
+    .menu{
+        padding: 5px;
+    }
+    .menu.sticky{
+        padding: 0px;
+    }
+    .menu .logo img{
+        height: 40px;
+        margin: 15px 0 0 20px ;
+    }
+}
+@media(max-width: 545px){
+    .menu{
+        padding: 0px;
+    }
+    .menu .logo img{
+        height: 25px;
+    }
+    .menu ul li{
+        margin: 0;
+    }
+    .menu ul li a{
+        font-size: 12px;
+    }
+}
+/* Post Page Content */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    margin: 0 150px;
+}
+.container .post{
+    background: #fff;
+    border-radius: 5px;
+    display: block;
+    width: 95%;
+    height: min-content;
+    padding: 25px 40px;
+    margin: 170px auto 0 auto;
+    position: relative;
+}
+.post .title,
+.post .content{
+    margin: 0 20px;
+}
+.post .content img{
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+}
+.post .content{
+    display: flex;
+    margin-top: 10px;
+}
+.post .content .text{
+    margin-left: 10px;
+}
+.content .text p{
+    margin-top: 10px;
+}
+.content .text p.date,
+.content .text p.category{
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.content .text p.description{
+    font-size: 16px;
+    margin-right: 50px;
+}
+.pictures-related{
+    width: 100%;
+    padding-top: 5px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pictures-related img{
+    width: 45%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+@media(max-width: 1300px){
+    .container {
+        margin: 0 60px;
+    }
+    .post .content img{
+        width: 40%;
+        height: 40%;
+    }
+}
+@media(max-width: 1160px){
+    .container {
+        margin: 0 20px;
+    }
+    .post .content img{
+        width: 50%;
+        height: 50%;
+    }
+}
+@media(max-width: 1020px){
+    .container {
+        margin: 0 10px;
+    }
+    .post .content img{
+        width: 60%;
+        height: 60%;
+    }
+    .content .text p.description{
+        margin-right: 0px;
+    }
+}
+@media(max-width: 950px){
+    .container .post .content{
+        display: block;
+    }
+    .post .content img{
+        margin-top: 10px;
+        width: 80%;
+        height: 80%;
+    }
+    .post .content .text{
+        margin-left: 3px;
+    }
+    .content .text .sub-text{
+        display: flex;
+    }
+    .content .text .date{
+        margin-left: 20px;
+        order: 2;
+    }
+    .content .text p.description{
+        width: 80%;
+    }
+}
+@media(max-width: 750px){
+    .post .content img{
+        margin-top: 10px;
+        width: 95%;
+        height: 95%;
+    }
+    .content .text p.description{
+        width: 95%;
+    }
+}
+@media(max-width: 680px){
+    .container .post{
+        margin-top: 90px;
+    }
+}
+/* Footer Copyright */
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #919191;
+}

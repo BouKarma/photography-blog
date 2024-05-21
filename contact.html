@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Blog - Ryan Silva</title>
+    <script src="https://kit.fontawesome.com/f6826c6d44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script src="" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <img src="images/logo-no-background.png" alt="logo-png">
+            </div>
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <!-- <li id="posts"><a href="#">Posts</a></li> -->
+                <li id="contact"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">ryanv0910@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send me a message</div>
+                <p>Send a message to get support</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="65d32e51-fe25-460a-857d-185d764b9a23">
+                    <div class="input-box">
+                        <input type="text" required name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea required name="message" placeholder="Message..."></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Send Now">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <span>© 2024 Copyright: RyanSilva.com</span>
+        </div>
+    </footer>
+</body>
+</html>
